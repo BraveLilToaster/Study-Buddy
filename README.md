@@ -25,6 +25,7 @@ Download and Install PostgreSQL.
 ###JSON Objects
     
 Event Object
+
     Name
     Location
     Date
@@ -34,6 +35,7 @@ Event Object
     Description
     
 User Object
+
     User Name
     Email
     Password
@@ -41,6 +43,7 @@ User Object
     Class List (FK)
     
 Class List Object
+
     Class Name
     School
     Department
