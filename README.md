@@ -20,5 +20,31 @@ If you get EACCESS permision problems check out https://docs.npmjs.com/getting-s
     $ mkvirtualenv stb -p `which python3`
     (stb) $ pip install django==1.9.0 # check requirements.txt for version changes
 
-
 Download and Install PostgreSQL.
+
+###JSON Objects
+    
+Event Object
+    Name
+    Location
+    Date
+    Time
+    User Objects (FK)
+    Class Object (FK)
+    Description
+    
+User Object
+    User Name
+    Email
+    Password
+    School
+    Class List (FK)
+    
+Class List Object
+    Class Name
+    School
+    Department
+    Course #
+    Section
+    Array of users Objects in Class (FK)
+    
