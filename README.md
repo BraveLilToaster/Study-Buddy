@@ -42,7 +42,7 @@ User Object
     School
     Class List (FK)
     
-Class List Object
+Class Object
 
     Class Name
     School
