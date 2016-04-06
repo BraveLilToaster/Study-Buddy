@@ -51,3 +51,10 @@ Class Object
     Section
     Array of users Objects in Class (FK)
     
+![alt tag](/screenshots/studybuddy_login.png)
+![alt tag](/screenshots/studybuddy_signup.png)
+![alt tag](/screenshots/studybuddy_class_list.png)
+![alt tag](/screenshots/studybuddy_create_event.png)
+[alt tag](/screenshots/studybuddy_join_class.png)
+![alt tag](/screenshots/studybuddy_add_class_modal.png)
+![alt tag](/screenshots/studybuddy_settings.png)
