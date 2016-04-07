@@ -1,0 +1,30 @@
+{
+  "name": "study-buddy",
+  "version": "1.0.0",
+  "description": "### Nodejs and npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BraveLilToaster/Study-Buddy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BraveLilToaster/Study-Buddy/issues"
+  },
+  "homepage": "https://github.com/BraveLilToaster/Study-Buddy#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.5.0",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8"
+  }
+}

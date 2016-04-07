@@ -10,9 +10,9 @@ If you get EACCESS permision problems check out https://docs.npmjs.com/getting-s
 
     $ npm install -g bower
 
-### Grunt
+### Gulp
 
-    $ npm install -g grunt-cli
+    $ npm install -g gulp-cli
 
 ###Install Django
 
@@ -22,8 +22,8 @@ If you get EACCESS permision problems check out https://docs.npmjs.com/getting-s
 
 Download and Install PostgreSQL.
 
-###JSON Objects
-    
+#JSON Objects
+
 Event Object
 
     Name
@@ -33,7 +33,7 @@ Event Object
     User Objects (FK)
     Class Object (FK)
     Description
-    
+
 User Object
 
     User Name
@@ -41,7 +41,7 @@ User Object
     Password
     School
     Class List (FK)
-    
+
 Class Object
 
     Class Name
@@ -50,4 +50,3 @@ Class Object
     Course #
     Section
     Array of users Objects in Class (FK)
-    
