@@ -5,7 +5,10 @@
     $ sudo apt-get install nodejs nodejs-dev npm
 
 If you get EACCESS permision problems check out https://docs.npmjs.com/getting-started/fixing-npm-permissions
+### Express
 
+    $ npm install -g express
+    
 ### Bower
 
     $ npm install -g bower
@@ -14,13 +17,19 @@ If you get EACCESS permision problems check out https://docs.npmjs.com/getting-s
 
     $ npm install -g grunt-cli
 
-###Install Django
+###Install morgan
 
-    $ pip install virtualenvwrapper
-    $ mkvirtualenv stb -p `which python3`
-    (stb) $ pip install django==1.9.0 # check requirements.txt for version changes
+    $ npm install -g morgan
+    
+###Install Mongoose
 
-Download and Install PostgreSQL.
+    $ npm install -g mongoose
+    
+###Install Body Parser
+
+    $ npm install -g body-parsers
+
+Download and Install MongoDB and Robomongo.
 
 ###JSON Objects
     
