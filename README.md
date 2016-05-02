@@ -5,7 +5,6 @@
     $ sudo apt-get install nodejs nodejs-dev npm
 
 If you get EACCESS permision problems check out https://docs.npmjs.com/getting-started/fixing-npm-permissions
-### Express
 
 ### Install mongo dependencies
 
