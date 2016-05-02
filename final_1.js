@@ -151,7 +151,7 @@ apiRouter.route('/classes')
 	});
 
 //query by ObjectId
-apiRouter.route('/classes/:classes')
+apiRouter.route('/classes/:class_id')
 	.get(function(req, res) {
 		Classes.findById(req.params.class_id, function(err, classes) {
 			if (err) return res.send(err);
@@ -221,7 +221,7 @@ apiRouter.route('/events')
 	});
 
 //query by ObjectId
-apiRouter.route('/classes/:classes')
+apiRouter.route('/events/:event_id')
 	.get(function(req, res) {
 		Event.findById(req.params.event_id, function(err, event) {
 			if (err) return res.send(err);
