@@ -41,4 +41,10 @@ input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([rea
 .cancel {
   color: #F44336; }
 
+.schedule-title {
+  padding: 8px; }
+
+.schedule-date {
+  font-size: 1.2rem; }
+
 /*# sourceMappingURL=app.css.map */

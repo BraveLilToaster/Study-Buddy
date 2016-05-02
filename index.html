@@ -1,129 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Studly - Study like a Champ</title>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Studly - Study like a Champ</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/app.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-<body>
-  <div class="navbar-fixed">
-    <nav class="light-blue lighten-1" role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Studly</a>
-      </div>
-    </nav>
-  </div>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="col l6 s12">
-    <div class="row">
-      <div class="col s12 m6 offset-m3">
-        <div class="card white ">
-          <div class="row">
-              <ul class="tabs ">
-                <li class="tab col s3"><a href="#login">Login</a></li>
-                <li class="tab col s3"><a href="#signup">Sign Up</a></li>
-              </ul>
-          </div>
-          <div class="row">
-            <form id="login" class="col s12">
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
-                  <label for="email" data-error="Not a valid Email">Email</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="password" type="password" class="validate">
-                  <label for="password" data-error="Not a valid Password">Password</label>
-                </div>
-              </div>
-              <div class="row">
-                <a class="waves-effect waves-light btn-large col s6 m4 offset-s3 offset-m4 light-blue" type="submit">Login</a>
-              </div>
-            </form>
-            <form id="signup" class="col s12">
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="Name" type="text" class="validate">
-                  <label for="Name">Name</label>
-                </div>
-              </div>
-							<div class="row">
-                <div class="input-field col s12">
-									<select>
-										<option value="" disabled selected>Choose your option</option>
-										<option value="1">Option 1</option>
-										<option value="2">Option 2</option>
-										<option value="3">Option 3</option>
-									</select>
-									<label>Materialize Select</label>
-								</div>
-							</div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
-                  <label for="email" data-error="Not a valid Email">Email</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="password" type="password" class="validate">
-                  <label for="password" data-error="Not a valid Password">Password</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="password_confirm" type="password" class="validate">
-                  <label for="password_confrim" data-error="Not a valid Password">Confirm Password</label>
-                </div>
-              </div>
-              <div class="row">
-                <a id="SignupBtn" class="waves-effect waves-light btn-large col s6 m4 offset-s3 offset-m4 light-blue" type="submit">Sign Up</a>
-              </div>
-
-            </form>
-          </div>
-          </div>
-          </div>
-          </div>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/app.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+  <body>
+    <div class="navbar-fixed">
+      <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Studly</a>
+        </div>
+      </nav>
     </div>
-  </div>
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="col l6 s12">
+        <div class="row">
+          <div class="col s12 m6 offset-m3">
+            <div class="card white ">
+              <div class="row">
+                <ul class="tabs ">
+                  <li class="tab col s3"><a href="#login">Login</a></li>
+                  <li class="tab col s3"><a href="#signup">Sign Up</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <div id="login" class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="login-email" type="email" class="validate">
+                      <label for="login-email" data-error="Not a valid Email">Email</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="login-password" type="password" class="validate">
+                      <label for="login-password" data-error="Not a valid Password">Password</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <a id="LoginBtn" class="waves-effect waves-light btn-large col s6 m4 offset-s3 offset-m4 light-blue" type="submit">Login</a>
+                  </div>
+                </div>
+                <div id="signup" class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="signup-name" type="text">
+                      <label for="signup-name">Name</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <select id="signup-school">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Wayne State</option>
+                        <option value="2">University of Michigan</option>
+                        <option value="3">Michigan State University</option>
+                      </select>
+                      <label>School</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="signup-email" type="email" class="validate">
+                      <label for="signup-email" data-error="Not a valid Email">Email</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="signup-password" type="password" class="validate">
+                      <label for="password" data-error="Not a valid Password">Password</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="signup-password_confirm" type="password" class="validate">
+                      <label for="signup-password_confrim" data-error="Not a valid Password">Confirm Password</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <a id="SignupBtn" class="waves-effect waves-light btn-large col s6 m4 offset-s3 offset-m4 light-blue" type="submit">Sign Up</a>
+                  </div>
 
-  <footer class="page-footer blue-grey darken-4">
-    <div class="container">
-      <div class="row">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer-copyright">
+
+    <footer class="page-footer blue-grey darken-4">
       <div class="container">
-      Made using <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        <div class="row">
+        </div>
       </div>
-    </div>
-  </footer>
+      <div class="footer-copyright">
+        <div class="container">
+          Made using <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        </div>
+      </div>
+    </footer>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-	<script>
-     $(document).ready(function() {
-        $('select').material_select();
-    });
-  </script>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
     <script>
-      document.getElementById("SignupBtn").addEventListener("click", signup);
-      var signup = function() {
-        var username = document.getElementById('Name');
-        var password = document.getElementById('password');
-        console.log(username + " " + password);
-      }
+$(document).ready(function() {
+  $('select').material_select();
+});
+    </script>
+    <script>
+window.onload = function() {
+  document.getElementById("SignupBtn").addEventListener( 'click' , signup);
+  document.getElementById("LoginBtn").addEventListener( 'click' , login);
+}
+var login = function() {
+  var email = document.getElementById('signup-email').value;
+  var password = document.getElementById('signup-password').value;
+
+  $.get( "http://35.16.58.103:8080/api/users/", { password: password, username: email  } )
+    .done(function() {
+
+
+    });
+}
+var signup = function() {
+  var name = document.getElementById('signup-name').value;
+  var school = document.getElementById('signup-school').value;
+  var email = document.getElementById('signup-email').value;
+  var password = document.getElementById('signup-password').value;
+
+  $.post( "http://35.16.58.103:8080/api/users/", { name: name, password: password, school: school, username: email  } )
+    .done(function() {
+      alert( "Signup was successful!" );
+
+    });
+}
     </script>
 
   </body>
