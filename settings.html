@@ -15,7 +15,7 @@
   <body>
     <div class="navbar-fixed">
       <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Studly</a>
+        <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Studly</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="schedule.html">My Schedule</a></li>
             <li><a href="createEvent.html">Create Event</a></li>
@@ -80,8 +80,8 @@
                   </div>
                   <div class="row">
                     <div class="input-field col s12">
-                      <a class="waves-effect waves-light btn green lighten-1" type="submit">Create</a>
-                      <a class="waves-effect waves-light btn red lighten-1">Discard</a>
+                      <a class="waves-effect waves-light btn green lighten-1" type="submit">Save</a>
+                      <a href="/" class="waves-effect waves-light btn red lighten-1">Log Out</a>
                     </div>
                   </div>
                 </form>
@@ -108,16 +108,10 @@
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
-    <script src="js/lolliclock.js"></script>
     <script src="js/init.js"></script>
     <script>
 //$('#textarea1').val('New Text');
 $('#textarea1').trigger('autoresize');
-$('.datepicker').pickadate({
-  selectMonths: true, // Creates a dropdown to control month
-  selectYears: 15 // Creates a dropdown of 15 years to control year
-});
-$('#pick-a-time').lolliclock({autoclose:true});
     </script>
 
   </body>

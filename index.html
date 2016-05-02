@@ -128,8 +128,7 @@ var login = function() {
 
   $.get( "http://35.16.58.103:8080/api/users/", { password: password, username: email  } )
     .done(function() {
-
-
+      window.location.href = './schedule.html';
     });
 }
 var signup = function() {
@@ -139,8 +138,9 @@ var signup = function() {
   var password = document.getElementById('signup-password').value;
 
   $.post( "http://35.16.58.103:8080/api/users/", { name: name, password: password, school: school, username: email  } )
-    .done(function() {
-      alert( "Signup was successful!" );
+    .done(function(data) {
+      alert( data.id );
+      window.location.href = './schedule.html';
 
     });
 }

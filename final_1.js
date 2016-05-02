@@ -8,6 +8,7 @@ var User = require('./user');
 var Classes = require('./classes')
 var port = process.env.PORT || 8080;
 var Event = require('./event')
+var path = require('path');
 // app config
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -18,7 +19,7 @@ app.use(function(req, res, next) {
 	next();
 });
 
-// log all requests to the console 
+// log all requests to the console
 app.use(morgan('dev'));
 
 // connect to our database
@@ -26,8 +27,12 @@ mongoose.connect('mongodb://localhost:27017');
 
 //api routes
 // basic route to test connect
+app.use(express.static('public'));
+app.use('/public', express.static(path.join(__dirname + '/public')));
+
+
 app.get('/', function(req, res) {
-	res.send('HOMEPAGE');
+      res.sendFile(path.join(__dirname + '/'));
 });
 
 //express router
@@ -40,9 +45,9 @@ apiRouter.use(function(req, res, next) {
 	next();
 });
 
-// test route to make sure everything is working 
+// test route to make sure everything is working
 apiRouter.get('/', function(req, res) {
-	res.json({ message: 'api hit' });	
+	res.json({ message: 'api hit' });
 });
 
 //users routes
@@ -50,7 +55,7 @@ apiRouter.route('/users')
 
 	//post
 	.post(function(req, res) {//test
-		
+
 		var user = new User();
 		user.name = req.body.name;
 		user.username = req.body.username;
@@ -61,9 +66,9 @@ apiRouter.route('/users')
 		user.save(function(err) {
 			if (err) {
 				// duplicate entry
-				if (err.code == 11000) 
+				if (err.code == 11000)
 					return res.json({ success: false, message: 'A user with that username already exists. '});
-				else 
+				else
 					return res.send(err);
 			}
 			res.json({ message: 'User created!' });
@@ -118,14 +123,14 @@ apiRouter.route('/users/:user_id')
 			res.json({ message: 'Successfully deleted' });
 		});
 	});
-	//end user routes 
-	
+	//end user routes
+
 	//class routes
 apiRouter.route('/classes')
 
 	//post
 	.post(function(req, res) {//test
-		
+
 		var classes = new Classes();
 		classes.name = req.body.name;
 		classes.school = req.body.school;
@@ -134,7 +139,7 @@ apiRouter.route('/classes')
 		classes.events = req.body.events;
 		classes.section = req.body.section;
 		classes.save(function(err) {
-			if (err) {	
+			if (err) {
 				return res.send(err);
 			}
 			res.json({ message: 'class created!' });
@@ -195,7 +200,7 @@ apiRouter.route('/events')
 
 	//post
 	.post(function(req, res) {//test
-		
+
 		var event = new Event();
 		event.name = req.body.name;
 		event.date = req.body.date;
@@ -204,7 +209,7 @@ apiRouter.route('/events')
 		event.classes = req.body.classes;
 		event.description = req.body.description;
 		event.save(function(err) {
-			if (err) {				
+			if (err) {
 				return res.send(err);
 			}
 			res.json({ message: 'event created!' });
