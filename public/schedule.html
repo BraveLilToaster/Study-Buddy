@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Studly - Study like a Champ</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/app.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+  <body>
+    <div class="navbar-fixed">
+      <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Studly</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="schedule.html">My Schedule</a></li>
+            <li><a href="createEvent.html">Create Event</a></li>
+            <li><a href="settings.html"><i class="large material-icons">settings</i></a></li>
+          </ul>
+
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="createEvent.html">Create Event</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="Log Out">Log Out</a></li>
+          </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+    </div>
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="col l6 s12">
+        <div class="row">
+          <div class="col s12 m8 l6 offset-m2 offset-l3">
+              <div class="row">
+                <ul class="collection">
+                  <li class="collection-item">
+                    <h5 class="schedule-title">My Schedule</h5>
+                  </li>
+                  <li class="collection-item"><h6 class="schedule-date">12 April, 2016</h6></li>
+                  <li class="collection-item avatar list">
+                    <span class="title">Midterm Study Group</span>
+                    <p>Human Computer <br>
+                    UGL
+                    </p>
+                    <a href="#!" class="secondary-content"><span class="badge">4:00PM</span></span></a>
+                  </li>
+                  <li class="collection-item avatar list">
+                    <span class="title">Study for Quiz 3</span>
+                    <p>CSC 3100 <br>
+                    State Hall
+                    </p>
+                    <a href="#!" class="secondary-content"><span class="badge">10:00AM</span></span></a>
+                  </li>
+                  <li class="collection-item avatar list">
+                    <span class="title">Work on Group Project</span>
+                    <p>Human Computer <br>
+                    UGL
+                    </p>
+                    <a href="#!" class="secondary-content"><span class="badge">6:30PM</span></span></a>
+                  </li>
+                </ul>
+                <ul class="collection">
+                  <li class="collection-item"><h6 class="schedule-date">26 April, 2016</h6></li>
+                  <li class="collection-item avatar list">
+                    <span class="title">Homework 4</span>
+                    <p>Data Bases <br>
+                    UGL
+                    </p>
+                    <a href="#!" class="secondary-content"><span class="badge">2:00PM</span></span></a>
+                  </li>
+                </ul>
+                <ul class="collection">
+                  <li class="collection-item"><h6 class="schedule-date">2 May, 2016</h6></li>
+                  <li class="collection-item avatar list">
+                    <span class="title">Final Study Group</span>
+                    <p>African History <br>
+                    UGL
+                    </p>
+                    <a href="#!" class="secondary-content"><span class="badge">2:00PM</span></span></a>
+                  </li>
+                  <li class="collection-item avatar list">
+                    <span class="title">Final Presentation</span>
+                    <p>Human Computer Interaction<br>
+                    Old Main
+                    </p>
+                    <a href="#!" class="secondary-content"><span class="badge">3:00PM</span></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer blue-grey darken-4">
+      <div class="container">
+        <div class="row">
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Made using <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+$(document).ready(function() {
+  $('select').material_select();
+});
+    </script>
+
+  </body>
+</html>

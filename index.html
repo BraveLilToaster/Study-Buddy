@@ -57,7 +57,7 @@
                   <div class="row">
                     <div class="input-field col s12">
                       <select id="signup-school">
-                        <option value="" disabled selected>Choose your option</option>
+                        <option value="" disabled selected>Choose your School</option>
                         <option value="1">Wayne State</option>
                         <option value="2">University of Michigan</option>
                         <option value="3">Michigan State University</option>
@@ -139,7 +139,6 @@ var signup = function() {
 
   $.post( "http://35.16.58.103:8080/api/users/", { name: name, password: password, school: school, username: email  } )
     .done(function(data) {
-      alert( data.id );
       window.location.href = './schedule.html';
 
     });
