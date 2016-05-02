@@ -7,31 +7,19 @@
 If you get EACCESS permision problems check out https://docs.npmjs.com/getting-started/fixing-npm-permissions
 ### Express
 
-    $ npm install -g express
+### Install mongo dependencies
+
+    $ npm install -g morgan mongoose body-parsers bcrypt-nodejs mongo
     
-### Bower
-
-    $ npm install -g bower
-
-### Grunt
-
-    $ npm install -g grunt-cli
-
-###Install morgan
-
-    $ npm install -g morgan
+### Install packages from package.json
     
-###Install Mongoose
+    $ npm install
 
-    $ npm install -g mongoose
+# Run Server
     
-###Install Body Parser
+    $ node final_1.js
 
-    $ npm install -g body-parsers
-
-Download and Install MongoDB and Robomongo.
-
-###JSON Objects
+#JSON Objects
     
 Event Object
 
@@ -60,11 +48,11 @@ Class Object
     Section
     Array of users Objects in Class (FK)
     
-###Mockups
+#Mockups
 ![alt tag](/screenshots/studybuddy_login.png)
 ![alt tag](/screenshots/studybuddy_signup.png)
 ![alt tag](/screenshots/studybuddy_class_list.png)
 ![alt tag](/screenshots/studybuddy_create_event.png)
-[alt tag](/screenshots/studybuddy_join_class.png)
+![alt tag](/screenshots/studybuddy_join_class.png)
 ![alt tag](/screenshots/studybuddy_add_class_modal.png)
 ![alt tag](/screenshots/studybuddy_settings.png)
