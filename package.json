@@ -1,0 +1,27 @@
+{
+  "name": "studdybuddy",
+  "version": "1.0.0",
+  "description": "### Nodejs and npm",
+  "main": "classes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BraveLilToaster/Study-Buddy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BraveLilToaster/Study-Buddy/issues"
+  },
+  "homepage": "https://github.com/BraveLilToaster/Study-Buddy#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongo": "^0.1.0",
+    "mongoose": "^4.4.14",
+    "morgan": "^1.7.0"
+  }
+}
